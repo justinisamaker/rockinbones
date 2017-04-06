@@ -1,0 +1,39 @@
+/* ==========================================================================
+   MIXINS
+   ========================================================================== */
+
+// CLEARFIX
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// PIXEL TO EM CONVERSION - http://vvv.tobiassjosten.net/css/px-to-em-with-sass/
+@function em($px, $base: $base-font-size) {
+    @return ($px / $base) * 1em;
+}
+
+// REMOVE MARGIN AND PADDING
+@mixin no-space(){
+  margin:0;
+  padding:0;
+}
+
+// REMOVE ANY CSS APPEARANCE RULES
+@mixin no-appearance(){
+  appearance:none !important;
+  text-shadow:none !important;
+  outline:none !important;
+  box-shadow:none !important;
+  border-radius:0;
+}
+
+// VERTICAL ALIGN
+@mixin vertical-align() {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

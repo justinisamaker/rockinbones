@@ -1,0 +1,23 @@
+/* ==========================================================================
+   DEFAULT PAGE STYLES
+   ========================================================================== */
+
+@import "../main.scss";
+
+.block-section{
+  @include span(12);
+}
+
+#default-page{
+  @include span(10);
+  @include push(1);
+
+  h1{
+    text-align:center;
+  }
+}
+
+#content-container{
+  @include span(12);
+  border:$target1;
+}

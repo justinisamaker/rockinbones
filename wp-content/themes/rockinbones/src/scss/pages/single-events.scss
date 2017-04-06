@@ -1,0 +1,75 @@
+/* ==========================================================================
+   EVENTS - SINGLE
+   ========================================================================== */
+
+@import "../main.scss";
+
+.block-section{
+  @include span(12);
+  @include no-space;
+}
+
+#event-container{
+  @include span(12);
+  @include no-space;
+  background:$teal;
+  margin-top:em(75px);
+}
+
+.block-section{
+  @include span(12);
+  @include no-space;
+}
+
+// INTRO
+
+#event-inner-container{
+  @include span(10);
+  @include push(1);
+  padding-top:em(35px);
+  padding-bottom:em(125px);
+}
+
+#event-info{
+  margin-bottom:em(80px);
+  .data{
+    @include no-space;
+    font-size:1em;
+  }
+}
+
+#events-message{
+  padding-top:em(60px);
+  padding-bottom:em(110px);
+  background:$light-gray;
+
+  div{
+    @include span(10);
+    @include push(1);
+  }
+}
+
+/* 
+   BREAKPOINTS
+   ========================================================================== */
+@include breakpoint($medium){
+  #event-container{
+    margin-top:0;
+  }
+
+  #event-inner-container{
+    @include span(6);
+    @include push(3);
+    margin-top:0;
+    padding-top:170px;
+    padding-bottom:em(250px);
+  }
+
+  #events-message{
+    div{
+      @include span(5);
+      @include push(5);
+    }
+  }
+}
+

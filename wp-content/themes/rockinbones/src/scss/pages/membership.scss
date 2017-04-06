@@ -1,0 +1,208 @@
+/* ==========================================================================
+   MEMBERSHIP PAGE STYLES
+   ========================================================================== */
+
+@import "../main.scss";
+
+.block-section{
+  @include span(12);
+}
+
+// INTRO
+#membership-intro{
+  margin-top:em(75px);
+
+  h1{
+    @include span(10);
+    @include push(1);
+    text-align:center;
+  }
+}
+
+// TAGLINE
+#membership-tagline{
+  margin-top:em(75px);
+  margin-bottom:em(125px);
+
+  h4{
+    @include span(10);
+    @include push(1);
+    font-size:1.4em;
+  }
+}
+
+// ABOUT
+#membership-about{
+  @include span(10);
+  @include push(1);
+  margin-bottom:em(80px);
+}
+
+// PHOTO SECTION
+.photo-section{
+  @include no-space;
+
+  img{
+    width:100%;
+  }
+}
+
+// MEMBERSHIP LEVEL SECTIONS
+#membership-types{
+  background:yellow-white;
+  padding-top:em(100px);
+  padding-bottom:em(100px);
+}
+
+.membership-level{
+  @include span(10);
+  @include push(1);
+  margin-bottom:em(130px);
+
+  h2{
+    margin-bottom:em(15px);
+  }
+
+  .btn{
+    margin-top:em(70px);
+  }
+}
+
+.data{
+  font-size:0.9em;
+  text-transform:uppercase;
+}
+
+// MEMBER BENEFITS
+#member-benefits{
+  padding-top:em(100px);
+  background:$yellow-white;
+}
+
+#member-benefits-container{
+  @include span(10);
+  @include push(1);
+
+  h2{
+    margin-bottom:- em(20px);
+  }
+}
+
+// MEMBERS LIST
+#members-list-section{
+  padding-top:em(100px);
+  padding-bottom:em(150px);
+
+  h1{
+    text-align:center;
+  }
+
+  p{
+    @include span(10);
+    @include push(1);
+    text-align:center;
+  }
+}
+
+#members-list{
+  @include span(10);
+  @include push(1);
+  margin-top:em(75px);
+  column-count:2;
+
+  li{
+    @include span(12);
+    font-size:0.8em;
+  }
+}
+
+/* 
+   BREAKPOINTS
+   ========================================================================== */
+@include breakpoint($medium){
+  // INTRO
+  #membership-intro{
+    margin-top:em(120px);
+
+    h1{
+      @include span(5);
+      @include push(4 of 24);
+      text-align:left;
+    }
+  }
+
+  // TAGLINE
+  #membership-tagline{
+    margin-top:em(180px);
+    margin-bottom:em(200px);
+
+    h4{
+      @include span(3);
+      @include push(8 of 24);
+    }
+  }
+
+  // ABOUT
+  #membership-about{
+    @include span(5);
+    @include push(3);
+  }
+
+  // MEMBERSHIP LEVEL SECTIONS
+  .membership-level{
+    @include span(6);
+    @include push(3);
+  }
+
+  // MEMBER BENEFITS
+  #member-benefits-container{
+    @include span(4);
+    @include push(3);
+  }
+
+  // MEMBERS LIST
+  #members-list-section{
+    p{
+      @include span(10 of 24);
+      @include push(7 of 24);
+    }
+  }
+
+  #members-list{
+    @include span(8);
+    @include push(2);
+    column-count:3;
+    margin-top:em(150px);
+
+    li{
+      font-size:1.2em;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

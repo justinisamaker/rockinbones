@@ -1,0 +1,31 @@
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+button, .btn{
+  @include no-appearance;
+  border-radius:3px;
+  text-align:center;
+  font-weight:bold;
+  transition:all 0.1s linear;
+  display:inline-block;
+  position:relative;
+  width:auto;
+  margin:0 auto;
+  cursor:pointer;
+  text-transform:uppercase;
+
+  &:hover{
+    transition:all 0.1s linear;
+  }
+}
+
+.btn-yellow{
+  background:$yellow !important;
+  color:$dark-gray !important;
+  padding:1.2em 1.8em 1em 1.8em;
+  border:0;
+
+  &:hover{
+    background:$dark-yellow !important;
+  }
+}

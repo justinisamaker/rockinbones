@@ -1,0 +1,112 @@
+/* ==========================================================================
+   THE SPACE STYLES
+   ========================================================================== */
+
+@import "../main.scss";
+
+.block-section{
+  @include span(12);
+  @include no-space;
+
+  img{
+    width:100%;
+  }
+}
+
+// TAGLINE
+#tagline{
+  @include span(10);
+  @include push(1);
+  padding-top:em(75px);
+  text-align:center;
+}
+
+// INTRO
+#intro{
+  @include span(10);
+  @include push(1);
+  padding-top:em(50px);
+  padding-bottom:em(150px);
+}
+
+// CAPABILITIES
+.capabilities-section{
+  margin-top:-5px;
+  padding-top:em(100px);
+  padding-bottom:em(150px);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center center;
+}
+
+.capabilities-container{
+  @include span(10);
+  @include push(1);
+}
+
+.capabilities-list{
+  padding-left: em(20px);
+  li{
+    font-size:1.2em;
+    text-transform: none;
+  }
+}
+
+// HOUSE RULES
+#house-rules{
+  background:$yellow-white;
+  padding-top:em(75px);
+  padding-bottom:em(150px);
+}
+
+#house-rules-container{
+  @include span(10);
+  @include push(1);
+
+  h1{
+    text-align:center;
+  }
+}
+
+// HOME PHOTO TWO
+#home-photo-two{
+  margin-bottom:-5px;
+}
+
+/* 
+   BREAKPOINT
+   ========================================================================== */
+@include breakpoint($medium){
+  // TAGLINE
+  #tagline{
+    @include span(4);
+    @include push(7);
+    padding-top:em(200px);
+    text-align:left;
+  }
+
+  // INTRO
+  #intro{
+    @include span(8 of 24);
+    @include push(8 of 24);
+    padding-top:em(200px);
+    padding-bottom:em(150px);
+  }
+
+  // CAPABILITIES
+  .capabilities-container{
+    @include span(8 of 24);
+    @include push(8 of 24);
+  }
+
+  .capabilities-list{
+    padding-left: em(50px);
+  }
+
+  // HOUSE RULES
+  #house-rules-container{
+    @include span(8 of 24);
+    @include push(8 of 24);
+  }
+}
+

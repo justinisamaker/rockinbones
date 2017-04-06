@@ -1,0 +1,61 @@
+/* ==========================================================================
+   MEMBERSHIP APPLICATION FORM
+   ========================================================================== */
+
+@import "../main.scss";
+
+#membership-application-container{
+  @include span(12);
+  @include no-space;
+  font-size:0.9em;
+  padding-top:em(150px);
+  padding-bottom:em(200px);
+
+  h2{
+    text-align:center;
+  }
+}
+
+#membership-form{
+  @include span(10);
+  @include push(1);
+  margin-top:em(40px);
+}
+
+.form-element {
+  position: relative;
+  padding-bottom: 0.5em;
+
+  &.full{
+    @include span(12);
+  }
+
+  &.form-element-field1, &.form-element-field2, &.form-element-field3{
+    @include span(12);
+  }
+}
+
+@include breakpoint($medium){
+  #membership-form{
+    @include span(8);
+    @include push(2);
+  }
+
+  .form-element{
+    &.form-element-field1, &.form-element-field2, &.form-element-field3{
+      width:33% !important;
+      @include no-space;
+    }
+
+    &.form-element-field1, &.form-element-field2{
+      margin-right:0.5%;
+    }
+  }
+}
+
+@include breakpoint($extra-large){
+  #membership-form{
+    @include span(6);
+    @include push(3);
+  }
+}
