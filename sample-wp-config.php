@@ -90,7 +90,7 @@ if (!defined('WP_CONTENT_DIR')) {
   define('WP_CONTENT_DIR', dirname(__FILE__) . '/wp-content');
 }
 if (!defined('WP_CONTENT_URL')) {
-  define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content');
+  define('WP_CONTENT_URL', 'http://[ YOUR SITE URL HERE ]/wp-content');
 }
 
 
