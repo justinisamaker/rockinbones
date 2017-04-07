@@ -3,8 +3,6 @@
    GLOBALS
    ========================================================================== */
 
-$photoUrl: '/lostarts/wp-content/themes/knoll/dist/img/';
-
 /*
    SUSY GRID BOWER IMPORT AND GRID DECLARATIONS
    ========================================================================== */
@@ -19,8 +17,6 @@ $susy: (
 $target1: 1px solid red;
 $target2: 1px solid green;
 $target3: 1px solid blue;
-
-$base-font-size: 16pt;
 
 #body-container{
   @include container;
