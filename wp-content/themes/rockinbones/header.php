@@ -9,3 +9,5 @@
 	</head>
 
 	<body>
+    <div id="body-container">
+      <main id="main-container">

@@ -21,3 +21,8 @@ $target3: 1px solid blue;
 #body-container{
   @include container;
 }
+
+#main-container{
+  @include span(10);
+  @include push(1);
+}
